@@ -19,7 +19,12 @@
   <!-- Header -->
   <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-3">\n        <img src=\"irislogo.png\" alt=\"IRIS Logo\" class=\"h-10 w-auto\" />
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-[color:var(--iris-teal)] grid place-items-center shadow-sm">
+          <span class="text-white font-extrabold">IR</span>
+        </div>
+        <span class="font-semibold text-slate-900">IRIS</span>
+        <span class="hidden sm:inline text-slate-500">• CT-Guided Biopsy Needle Guide</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#problem" class="hover:text-[color:var(--iris-teal)]">Problem</a>
@@ -47,7 +52,7 @@
       </div>
       <div class="relative">
         <!-- Replace with actual IRIS device photo -->
-        <img src="iris-device.jpg" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
+        <img src="IRIS Biopsy.gif" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
       </div>
     </div>
   </section>
@@ -56,16 +61,187 @@
   <section id="demo" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
     <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IRIS Device Demo</h2>
     <div class="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200">
-      <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=jHBM3hYFi1k" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
   <!-- Signup Section with Typeform -->
   <section id="signup" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
-    <h2 class=\"text-2xl font-bold text-slate-900 mb-6 text-center\">Get Early Access</h2>
-    <div class=\"bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200\">
-      <div data-tf-live=\"01K5MQK4GCDESZAE8Y2C7JKGAK\"></div>
-      <script src=\"//embed.typeform.com/next/embed.js\"></script>
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get Early Access</h2>
+    <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
+      <div data-tf-live="01K5MQK4GCDESZAE8Y2C7JKGAK"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600">
+      <p>© <span id="year"></span> IRIS Medical. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRIS – CT-Guided Biopsy Needle Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --iris-teal: #007FA3;
+      --iris-green: #2AA876;
+      --iris-gray: #3B3F42;
+    }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-[color:var(--iris-teal)] grid place-items-center shadow-sm">
+          <span class="text-white font-extrabold">IR</span>
+        </div>
+        <span class="font-semibold text-slate-900">IRIS</span>
+        <span class="hidden sm:inline text-slate-500">• CT-Guided Biopsy Needle Guide</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#problem" class="hover:text-[color:var(--iris-teal)]">Problem</a>
+        <a href="#solution" class="hover:text-[color:var(--iris-teal)]">Solution</a>
+        <a href="#demo" class="hover:text-[color:var(--iris-teal)]">Demo</a>
+        <a href="#signup" class="inline-flex items-center gap-2 rounded-xl bg-[color:var(--iris-teal)] px-4 py-2 text-white hover:opacity-90 transition">Get Early Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          Precision, made simple for CT-guided biopsies.
+        </h1>
+        <p class="mt-5 text-lg text-slate-700 max-w-xl">
+          <strong>IRIS</strong> is a disposable, skin-mounted needle guide that reduces confirmation scans, shortens procedure time, and improves targeting—without capital equipment or workflow disruption.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4">
+          <a href="#signup" class="inline-flex items-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow hover:opacity-90 transition">Get Early Access</a>
+          <a href="#demo" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition">Watch Demo</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Replace with actual IRIS device photo -->
+        <img src="IRIS Biopsy.gif" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section id="demo" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IRIS Device Demo</h2>
+    <div class="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200">
+      <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=jHBM3hYFi1k" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Signup Section with Typeform -->
+  <section id="signup" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get Early Access</h2>
+    <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
+      <div data-tf-live="01K5MQK4GCDESZAE8Y2C7JKGAK"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600">
+      <p>© <span id="year"></span> IRIS Medical. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRIS – CT-Guided Biopsy Needle Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --iris-teal: #007FA3;
+      --iris-green: #2AA876;
+      --iris-gray: #3B3F42;
+    }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-[color:var(--iris-teal)] grid place-items-center shadow-sm">
+          <span class="text-white font-extrabold">IR</span>
+        </div>
+        <span class="font-semibold text-slate-900">IRIS</span>
+        <span class="hidden sm:inline text-slate-500">• CT-Guided Biopsy Needle Guide</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#problem" class="hover:text-[color:var(--iris-teal)]">Problem</a>
+        <a href="#solution" class="hover:text-[color:var(--iris-teal)]">Solution</a>
+        <a href="#demo" class="hover:text-[color:var(--iris-teal)]">Demo</a>
+        <a href="#signup" class="inline-flex items-center gap-2 rounded-xl bg-[color:var(--iris-teal)] px-4 py-2 text-white hover:opacity-90 transition">Get Early Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          Precision, made simple for CT-guided biopsies.
+        </h1>
+        <p class="mt-5 text-lg text-slate-700 max-w-xl">
+          <strong>IRIS</strong> is a disposable, skin-mounted needle guide that reduces confirmation scans, shortens procedure time, and improves targeting—without capital equipment or workflow disruption.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4">
+          <a href="#signup" class="inline-flex items-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow hover:opacity-90 transition">Get Early Access</a>
+          <a href="#demo" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition">Watch Demo</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Replace with actual IRIS device photo -->
+        <img src="IRIS Biopsy.gif" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section id="demo" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IRIS Device Demo</h2>
+    <div class="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200">
+      <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=jHBM3hYFi1k" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Signup Section with Typeform -->
+  <section id="signup" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get Early Access</h2>
+    <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
+      <div data-tf-live="01K5MQK4GCDESZAE8Y2C7JKGAK"></div><script src="//embed.typeform.com/next/embed.js"></script>
     </div>
   </section>
 
