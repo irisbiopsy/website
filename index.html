@@ -4,9 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IRIS – CT-Guided Biopsy Needle Guide</title>
-  <meta name="description" content="IRIS is a disposable, skin-mounted needle guide that streamlines CT‑guided biopsies by improving precision, reducing radiation, and saving time." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -14,11 +11,8 @@
       --iris-teal: #007FA3;
       --iris-green: #2AA876;
       --iris-gray: #3B3F42;
-      --iris-yellow: #F5C04E;
-      --iris-red: #D64541;
     }
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-    .focus-ring:focus { outline: 3px solid var(--iris-teal); outline-offset: 2px; }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -27,10 +21,10 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="h-9 w-9 rounded-xl bg-[color:var(--iris-teal)] grid place-items-center shadow-sm">
-          <span class="text-white font-extrabold tracking-wider">IR</span>
+          <span class="text-white font-extrabold">IR</span>
         </div>
-        <span class="font-semibold tracking-tight text-slate-900">IRIS</span>
-        <span class="hidden sm:inline text-slate-500">• CT‑Guided Biopsy Needle Guide</span>
+        <span class="font-semibold text-slate-900">IRIS</span>
+        <span class="hidden sm:inline text-slate-500">• CT-Guided Biopsy Needle Guide</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#problem" class="hover:text-[color:var(--iris-teal)]">Problem</a>
@@ -41,92 +35,54 @@
     </div>
   </header>
 
-  <!-- Hero: copy left, IRIS device image right -->
+  <!-- Hero Section -->
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-[color:var(--iris-teal)]/10 via-white to-white"></div>
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
       <div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900">
-          Precision, made simple for CT‑guided biopsies.
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          Precision, made simple for CT-guided biopsies.
         </h1>
         <p class="mt-5 text-lg text-slate-700 max-w-xl">
-          <strong>IRIS</strong> is a disposable, skin‑mounted needle guide that reduces confirmation scans, shortens procedure time, and improves targeting—without capital equipment or workflow disruption.
+          <strong>IRIS</strong> is a disposable, skin-mounted needle guide that reduces confirmation scans, shortens procedure time, and improves targeting—without capital equipment or workflow disruption.
         </p>
         <div class="mt-6 flex flex-wrap items-center gap-4">
-          <a href="#signup" class="inline-flex items-center justify-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow hover:opacity-90 transition focus-ring">Get Early Access</a>
-          <a href="#demo" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition focus-ring">Watch 90‑sec Demo</a>
+          <a href="#signup" class="inline-flex items-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow hover:opacity-90 transition">Get Early Access</a>
+          <a href="#demo" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition">Watch Demo</a>
         </div>
       </div>
       <div class="relative">
-        <div class="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200 bg-white">
-          <!-- Replace src with your real product photo path -->
-          <img src="assets/iris-hero-placeholder.svg" alt="IRIS device photo" class="w-full h-full object-cover">
-        </div>
+        <!-- Replace with actual IRIS device photo -->
+        <img src="iris-device.jpg" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
       </div>
     </div>
   </section>
 
-  <!-- Problem / Solution -->
-  <section id="problem" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid lg:grid-cols-2 gap-10">
-      <div class="bg-white rounded-2xl p-8 shadow-sm ring-1 ring-slate-200">
-        <h2 class="text-xl font-semibold text-slate-900">The Problem</h2>
-        <ul class="mt-4 space-y-3 text-slate-700">
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-red)]"></span> Repeated confirmation scans add time and radiation.</li>
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-red)]"></span> Freehand targeting is variable; angle errors force restarts.</li>
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-red)]"></span> Scanner and staffing constraints limit daily throughput.</li>
-        </ul>
-      </div>
-      <div id="solution" class="bg-white rounded-2xl p-8 shadow-sm ring-1 ring-slate-200">
-        <h2 class="text-xl font-semibold text-slate-900">The IRIS Advantage</h2>
-        <ul class="mt-4 space-y-3 text-slate-700">
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-green)]"></span> Skin‑mounted guide locks entry angle for predictable trajectories.</li>
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-green)]"></span> Fewer scans → lower radiation and faster cases.</li>
-          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[color:var(--iris-green)]"></span> Disposable, sterile, capital‑free adoption.</li>
-        </ul>
-      </div>
+  <!-- Demo Video Section -->
+  <section id="demo" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IRIS Device Demo</h2>
+    <div class="aspect-video rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- Demo video BELOW hero -->
-  <section id="demo" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-    <div class="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-200">
-      <div class="aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200">
-        <!-- Replace with your actual video embed URL -->
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IRIS Demo – Dr. Dann Martin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
+  <!-- Signup Section with Typeform -->
+  <section id="signup" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get Early Access</h2>
+    <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
+      <div data-tf-live="01K5MQK4GCDESZAE8Y2C7JKGAK"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
     </div>
   </section>
 
-  <!-- Lead form (kept minimal for this mock) -->
-  <section id="signup" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-    <div class="grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-2xl font-bold text-slate-900">Be the first to try IRIS</h2>
-        <p class="mt-3 text-slate-700 max-w-prose">Sign up for early access, pilot opportunities, and updates.</p>
-      </div>
-      <div>
-        <form action="#" class="bg-white rounded-2xl p-6 shadow-sm ring-1 ring-slate-200">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input placeholder="Full name" class="mt-1 w-full rounded-xl border-slate-300 px-3 py-2" />
-            <input placeholder="Email" type="email" class="mt-1 w-full rounded-xl border-slate-300 px-3 py-2" />
-            <select class="sm:col-span-2 mt-1 w-full rounded-xl border-slate-300 px-3 py-2">
-              <option>Role</option><option>Interventional Radiologist</option><option>Radiology Technologist</option><option>Procurement</option><option>Other</option>
-            </select>
-          </div>
-          <button type="button" class="mt-4 inline-flex items-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow">Request Early Access</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-slate-600">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600">
       <p>© <span id="year"></span> IRIS Medical. All rights reserved.</p>
-      <a href="mailto:info@getiris.co" class="hover:text-[color:var(--iris-teal)]">Contact</a>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
