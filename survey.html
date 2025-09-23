@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IR Survey – IRIS CT-Guided Biopsy Needle Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --iris-teal: #007FA3;
+      --iris-green: #2AA876;
+      --iris-gray: #3B3F42;
+    }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+  <meta name="robots" content="noindex"> <!-- optional: keep the survey page off Google -->
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" aria-label="IRIS Home" class="inline-flex items-center">
+          <img src="assets/logo.png" alt="IRIS Logo" class="h-10 w-auto" />
+        </a>
+        <span class="hidden sm:inline text-slate-500">• CT-Guided Biopsy Needle Guide</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html#introduction" class="hover:text-[color:var(--iris-teal)]">Introduction</a>
+        <a href="index.html#team" class="hover:text-[color:var(--iris-teal)]">Team</a>
+        <a href="survey.html" class="text-[color:var(--iris-teal)] font-semibold">IR Survey</a>
+        <a href="index.html#signup" class="inline-flex items-center gap-2 rounded-xl bg-[color:var(--iris-teal)] px-4 py-2 text-white hover:opacity-90 transition">Get Early Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Intro -->
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">Interventional Radiologist Survey</h1>
+    <p class="mt-4 text-lg text-slate-700">
+      Thank you for lending your expertise. <strong>IRIS</strong> is a simple, single-use, skin-mounted needle guide designed to streamline
+      <strong>CT-guided biopsies</strong> by reducing confirmation scans, shortening procedure time, and improving targeting—without capital equipment or workflow disruption.
+      This page gives you a quick overview, followed by a short 3-minute survey.
+    </p>
+  </section>
+
+  <!-- IRIS Overview (concise) -->
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="grid gap-6 sm:grid-cols-3">
+      <div class="bg-white rounded-2xl p-6 shadow-sm ring-1 ring-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">What it is</h3>
+        <p class="text-slate-700 text-sm">
+          Disposable, skin-mounted <em>needle guide</em> for CT-guided procedures; intuitive “protractor-like” angle control at the skin entry site.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm ring-1 ring-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">What it does</h3>
+        <p class="text-slate-700 text-sm">
+          Helps achieve the planned entry angle & depth with fewer confirmation scans—targeting accuracy with less iteration.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm ring-1 ring-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">Why it matters</h3>
+        <p class="text-slate-700 text-sm">
+          Potential to reduce radiation exposure, shorten procedure time, and increase daily case throughput—without capital spend.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional: Device Image -->
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6">
+    <div class="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200">
+      <img src="iris-device.jpg" alt="IRIS device" class="w-full h-auto object-cover">
+    </div>
+  </section>
+
+  <!-- Survey Embed (same dimension & style as your homepage form) -->
+  <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IR Survey (3 minutes)</h2>
+    <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
+      <!-- Typeform embed -->
+      <div data-tf-live="01K5MQK4GCDESZAE8Y2C7JKGAK"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+    <p class="mt-4 text-center text-sm text-slate-500">
+      Your responses are confidential and used only for research and product development.
+    </p>
+  </section>
+
+  <!-- Regulatory Disclaimer -->
+  <section class="bg-slate-100 border-t border-slate-200 py-6">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm text-slate-600">
+        <strong>Regulatory Disclaimer:</strong> IRIS is an investigational device currently in the research and development phase.
+        It has <strong>not been cleared or approved by the U.S. Food and Drug Administration (FDA)</strong> and is
+        <strong>not available for clinical use, patient care, or commercial sale</strong>. Any information provided is for
+        <strong>educational and research purposes only</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 text-center">
+      <p>© <span id="year"></span> IRIS Medical. All rights reserved.</p>
+      <p class="mt-2 text-xs text-slate-500">IRIS is an investigational device, not FDA cleared, and not available for clinical use.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
