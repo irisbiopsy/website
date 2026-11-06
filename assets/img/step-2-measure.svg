@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t d"><title id="t">Step 2: Measure angle and depth on the planning CT</title><desc id="d">Axial CT slice showing a planned trajectory from the skin entry point to the lesion at 49 degrees from the skin surface and 9.2 centimeters deep.</desc>
+<rect x="28" y="20" width="424" height="280" rx="18" fill="#0B1829"/>
+<line x1="68" y1="20" x2="68" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="108" y1="20" x2="108" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="148" y1="20" x2="148" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="188" y1="20" x2="188" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="228" y1="20" x2="228" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="268" y1="20" x2="268" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="308" y1="20" x2="308" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="348" y1="20" x2="348" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="388" y1="20" x2="388" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="428" y1="20" x2="428" y2="300" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="60" x2="452" y2="60" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="100" x2="452" y2="100" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="140" x2="452" y2="140" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="180" x2="452" y2="180" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="220" x2="452" y2="220" stroke="#fff" stroke-opacity="0.035"/>
+<line x1="28" y1="260" x2="452" y2="260" stroke="#fff" stroke-opacity="0.035"/>
+<ellipse cx="240" cy="178" rx="158" ry="102" fill="#1B2A40" stroke="#4A5C76" stroke-width="2"/>
+<ellipse cx="240" cy="178" rx="146" ry="90" fill="none" stroke="#2A3B55" stroke-width="10"/>
+<ellipse cx="180" cy="200" rx="34" ry="24" fill="#24364F"/>
+<ellipse cx="306" cy="206" rx="26" ry="20" fill="#24364F"/>
+<circle cx="240" cy="248" r="17" fill="#8D9AAD"/><circle cx="240" cy="248" r="7" fill="#1B2A40"/>
+<circle cx="300" cy="188" r="17" fill="#E8A33D" fill-opacity="0.22"/>
+<circle cx="300" cy="188" r="10" fill="#E8A33D"/>
+<line x1="206" y1="78.4" x2="318" y2="78.4" stroke="#fff" stroke-opacity="0.45" stroke-dasharray="3 4"/>
+<line x1="206" y1="78.4" x2="300" y2="188" stroke="#2E7DF7" stroke-width="2.2" stroke-dasharray="6 4"/>
+<circle cx="206" cy="78.4" r="4" fill="#fff"/>
+<path d="M250,78.4 A44,44 0 0 1 234.6,111.8" fill="none" stroke="#fff" stroke-width="1.6"/>
+<text x="258" y="102.38963264594618" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="18.2" font-weight="700" fill="#FFFFFF" text-anchor="start">49°</text>
+<rect x="155" y="135" width="78" height="28" rx="14" fill="#2E7DF7"/>
+<text x="194" y="154" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15.0" font-weight="700" fill="#FFFFFF" text-anchor="middle">9.2 cm</text>
+<text x="48" y="46" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13.0" font-weight="600" fill="#7F8DA3" text-anchor="start">AXIAL · PLANNING SCAN</text>
+<line x1="372" y1="280" x2="432" y2="280" stroke="#7F8DA3" stroke-width="1.5"/>
+<text x="432" y="272" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12.3" font-weight="600" fill="#7F8DA3" text-anchor="end">5 cm</text>
+<text x="322" y="193" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15.0" font-weight="600" fill="#E8A33D" text-anchor="start">Target</text>
+</svg>
