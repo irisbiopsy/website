@@ -306,7 +306,9 @@
     }
 
     // Spam honeypot: real people never fill this in.
-    if (form.elements.website && form.elements.website.value) {
+    // The field has a meaningless name so browser autofill and password managers skip it.
+    if (form.elements.iris_hp && form.elements.iris_hp.value) {
+      if (window.console) console.warn("[IRIS] Spam check triggered; submission not sent.");
       success();
       return;
     }
@@ -325,7 +327,10 @@
       body: JSON.stringify(hubspotPayload(readForm()))
     })
       .then(function (res) {
-        if (res.ok) return success();
+        if (res.ok) {
+          if (window.console) console.info("[IRIS] HubSpot accepted the submission.");
+          return success();
+        }
         return res.json().catch(function () { return {}; }).then(function (data) {
           if (window.console) console.error("[IRIS] HubSpot rejected the submission:", res.status, data);
           throw { friendly: friendlyError(data) };
