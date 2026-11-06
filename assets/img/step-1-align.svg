@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t d"><title id="t">Step 1: Align IRIS at the skin entry site</title><desc id="d">IRIS placed on the patient's skin over the entry mark, with its base along the CT gantry laser line.</desc>
+<rect x="56" y="38" width="368" height="248" rx="64" fill="#fff" stroke="#D3DAE4" stroke-width="1.5"/>
+<line x1="20" y1="182" x2="460" y2="182" stroke="#E5484D" stroke-opacity="0.18" stroke-width="9"/>
+<line x1="20" y1="182" x2="460" y2="182" stroke="#E5484D" stroke-width="2"/>
+<path d="M114,182 A96,96 0 0 1 306,182 L268,182 A58,58 0 0 0 152,182 Z" fill="#2E7DF7" fill-opacity="0.16" stroke="#2E7DF7" stroke-width="1.6" stroke-linejoin="round"/>
+<line x1="114.0" y1="182.0" x2="127.0" y2="182.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="114.4" y1="173.6" x2="118.8" y2="174.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="115.5" y1="165.3" x2="123.3" y2="166.7" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="117.3" y1="157.2" x2="121.6" y2="158.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="119.8" y1="149.2" x2="127.3" y2="151.9" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="123.0" y1="141.4" x2="127.1" y2="143.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="126.9" y1="134.0" x2="138.1" y2="140.5" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="131.4" y1="126.9" x2="135.0" y2="129.5" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="136.5" y1="120.3" x2="142.6" y2="125.4" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="142.1" y1="114.1" x2="145.3" y2="117.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="148.3" y1="108.5" x2="153.4" y2="114.6" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="154.9" y1="103.4" x2="157.5" y2="107.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="162.0" y1="98.9" x2="168.5" y2="110.1" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="169.4" y1="95.0" x2="171.3" y2="99.1" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="177.2" y1="91.8" x2="179.9" y2="99.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="185.2" y1="89.3" x2="186.3" y2="93.6" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="193.3" y1="87.5" x2="194.7" y2="95.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="201.6" y1="86.4" x2="202.0" y2="90.8" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="210.0" y1="86.0" x2="210.0" y2="99.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="218.4" y1="86.4" x2="218.0" y2="90.8" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="226.7" y1="87.5" x2="225.3" y2="95.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="234.8" y1="89.3" x2="233.7" y2="93.6" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="242.8" y1="91.8" x2="240.1" y2="99.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="250.6" y1="95.0" x2="248.7" y2="99.1" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="258.0" y1="98.9" x2="251.5" y2="110.1" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="265.1" y1="103.4" x2="262.5" y2="107.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="271.7" y1="108.5" x2="266.6" y2="114.6" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="277.9" y1="114.1" x2="274.7" y2="117.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="283.5" y1="120.3" x2="277.4" y2="125.4" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="288.6" y1="126.9" x2="285.0" y2="129.5" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="293.1" y1="134.0" x2="281.9" y2="140.5" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<line x1="297.0" y1="141.4" x2="292.9" y2="143.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="300.2" y1="149.2" x2="292.7" y2="151.9" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="302.7" y1="157.2" x2="298.4" y2="158.3" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="304.5" y1="165.3" x2="296.7" y2="166.7" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="305.6" y1="173.6" x2="301.2" y2="174.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="0.9"/>
+<line x1="306.0" y1="182.0" x2="293.0" y2="182.0" stroke="#1C22A1" stroke-opacity="0.7" stroke-width="1.4"/>
+<text x="145.9" y="148.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#1C22A1" fill-opacity="0.75" text-anchor="middle">30</text>
+<text x="173.0" y="120.9" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#1C22A1" fill-opacity="0.75" text-anchor="middle">60</text>
+<text x="210.0" y="111.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#1C22A1" fill-opacity="0.75" text-anchor="middle">90</text>
+<text x="247.0" y="120.9" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#1C22A1" fill-opacity="0.75" text-anchor="middle">120</text>
+<text x="274.1" y="148.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#1C22A1" fill-opacity="0.75" text-anchor="middle">150</text>
+<rect x="112" y="179" width="196" height="6" rx="3" fill="#2E7DF7" fill-opacity="0.55"/>
+<rect x="193" y="175" width="34" height="11" rx="5.5" fill="#1C22A1"/>
+<rect x="208" y="175" width="4" height="7" fill="#fff" fill-opacity="0.9"/>
+<path d="M203,191 L217,205 M217,191 L203,205" stroke="#C2353A" stroke-width="2.4" stroke-linecap="round"/>
+<text x="452" y="170" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15.6" font-weight="600" fill="#E5484D" text-anchor="end">CT gantry laser</text>
+<path d="M219,198 L268,240" stroke="#5A6878" stroke-width="1" fill="none"/><circle cx="219" cy="198" r="2.5" fill="#5A6878"/>
+<text x="274" y="246" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15.6" font-weight="500" fill="#5A6878" text-anchor="start">Skin entry mark</text>
+<path d="M130,182 L104,246" stroke="#5A6878" stroke-width="1" fill="none"/><circle cx="130" cy="182" r="2.5" fill="#5A6878"/>
+<text x="98" y="262" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15.6" font-weight="500" fill="#5A6878" text-anchor="start">Base on the laser line</text>
+<text x="28" y="306" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.3" font-weight="600" fill="#5A6878" text-anchor="start">Top view · skin surface</text>
+</svg>

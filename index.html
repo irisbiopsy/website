@@ -1,307 +1,667 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IRIS – CT-Guided Biopsy Needle Guide</title>
-    <link rel="icon" type="image/png" href="IRIS favicon3.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        --iris-teal: #007fa3;
-        --iris-green: #2aa876;
-        --iris-gray: #3b3f42;
-      }
-      body {
-        font-family: "Inter", sans-serif;
-      }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTQXTF7QM9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRIS | CT-Guided Needle Guide: Faster, Safer Needle Alignment</title>
+  <meta name="description" content="IRIS is a single-use, skin-mounted needle guide for CT-guided procedures. In preclinical testing: 33% faster needle alignment and 53% less radiation, with no capital equipment." />
+  <link rel="canonical" href="https://www.irisbiopsy.com/" />
+  <meta name="theme-color" content="#0B1829" />
 
-      gtag("config", "G-VTQXTF7QM9");
-    </script>
-  </head>
-  <body class="bg-slate-50 text-slate-900">
-    <!-- Header -->
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <!-- Logo -->
-          <a href="#top" class="inline-flex items-center" aria-label="IRIS Home">
-            <img src="IRIS Biopsy Logo.png" alt="IRIS Logo" class="h-10 w-auto" />
+  <!-- Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IRIS Biopsy" />
+  <meta property="og:title" content="IRIS | Faster, safer needle alignment for CT-guided procedures" />
+  <meta property="og:description" content="A single-use, skin-mounted needle guide. 33% faster needle alignment and 53% less radiation in preclinical testing, with no capital equipment." />
+  <meta property="og:url" content="https://www.irisbiopsy.com/" />
+  <meta property="og:image" content="https://www.irisbiopsy.com/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IRIS | Faster, safer needle alignment for CT-guided procedures" />
+  <meta name="twitter:description" content="33% faster needle alignment and 53% less radiation in preclinical testing, with no capital equipment." />
+  <meta name="twitter:image" content="https://www.irisbiopsy.com/assets/img/og-image.png" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Fonts (self-hosted) -->
+  <link rel="preload" href="assets/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IRIS Biopsy, Inc.",
+    "url": "https://www.irisbiopsy.com/",
+    "logo": "https://www.irisbiopsy.com/assets/img/icon-512.png",
+    "description": "IRIS is a single-use, skin-mounted needle guide for CT-guided procedures.",
+    "founder": [
+      { "@type": "Person", "name": "Dann Martin, MD", "jobTitle": "Founder & CEO" },
+      { "@type": "Person", "name": "Jonathan Sadlowe, MBA", "jobTitle": "Co-Founder & COO" }
+    ]
+  }
+  </script>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+      <symbol id="i-crosshair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M22 12h-4M6 12H2M12 6V2M12 22v-4"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 9h2a2 2 0 0 1 2 2v10M2 21h20"/><path d="M8 7h4M8 11h4M8 15h4"/></symbol>
+      <symbol id="i-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7 7-7Z"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5v-7Z" fill="currentColor"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="IRIS Biopsy, back to top">
+        <img src="assets/img/iris-logo.svg" alt="IRIS" width="127" height="24" />
+        <span class="brand-tag">CT-Guided<br />Needle Guide</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#how-it-works">How it works</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#video">Video</a>
+        <a href="#team">Team</a>
+        <a class="btn btn--primary btn--sm" href="#early-access">Get early access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <a class="status-pill reveal" href="#early-access">
+            <span class="dot" aria-hidden="true"></span>
+            Now placing non-clinical evaluation units
+            <svg class="arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg>
           </a>
-          <span class="hidden sm:inline text-slate-500"> CT-Guided Biopsy Needle Guide</span>
-        </div>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#how-it-works" class="hover:text-[color:var(--iris-teal)]">How it works</a>
-          <a href="#introduction" class="hover:text-[color:var(--iris-teal)]">Introduction</a>
-          <a href="#team" class="hover:text-[color:var(--iris-teal)]">Team</a>
-          <a href="survey.html" class="hover:text-[color:var(--iris-teal)]">IR Survey</a>
-          <a
-            href="#signup"
-            class="inline-flex items-center gap-2 rounded-xl bg-[color:var(--iris-teal)] px-4 py-2 text-white hover:opacity-90 transition"
-            >Get Early Access</a
-          >
-        </nav>
-      </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
-            Faster, safer needle alignment for CT-guided procedures.
+          <h1 class="display reveal" id="hero-title" data-delay="1">
+            Faster, safer needle alignment for <span class="nowrap">CT-guided</span> procedures. <em>Without the capital cost.</em>
           </h1>
-          <p class="mt-5 text-lg text-slate-700 max-w-xl">
-            <strong>IRIS</strong> is a single-use, skin-mounted needle guide that improves targeting, reduces
-            confirmation scans, and shortens procedure time—without capital equipment or workflow disruption.
+
+          <p class="lead reveal" data-delay="2">
+            <strong style="color:var(--navy);font-weight:600">IRIS</strong> is a single-use, skin-mounted needle guide that turns the angle you plan on CT into a physical reference at the skin. Improve targeting, cut confirmation scans, and shorten procedures, with no new equipment and no change to your workflow.
           </p>
-          <div class="mt-6 flex flex-wrap items-center gap-4">
-            <a
-              href="#signup"
-              class="inline-flex items-center rounded-xl bg-[color:var(--iris-teal)] px-5 py-3 text-white font-medium shadow hover:opacity-90 transition"
-              >Get Early Access</a
-            >
-            <a
-              href="#introduction"
-              class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition"
-              >Watch Introduction Video</a
-            >
+
+          <div class="hero-ctas reveal" data-delay="2">
+            <a class="btn btn--primary" href="#early-access">
+              Request an evaluation unit
+              <svg aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+            <a class="btn btn--ghost" href="#video">
+              <svg aria-hidden="true"><use href="#i-play" /></svg>
+              Watch the introduction
+            </a>
+          </div>
+
+          <div class="hero-stats reveal" data-delay="3">
+            <div class="hero-stat">
+              <div class="num"><span data-count="33">33</span><em>%</em></div>
+              <div class="lbl">faster needle alignment<sup class="fn"><a href="#fn-1" aria-label="See footnote 1">1</a></sup></div>
+            </div>
+            <div class="hero-stat">
+              <div class="num"><span data-count="53">53</span><em>%</em></div>
+              <div class="lbl">less radiation exposure<sup class="fn"><a href="#fn-1" aria-label="See footnote 1">1</a></sup></div>
+            </div>
           </div>
         </div>
-        <div class="relative">
-          <!-- Replace with actual IRIS device photo -->
-          <img src="IRIS Hero GIF.gif" alt="IRIS Device" class="rounded-2xl shadow-xl ring-1 ring-slate-200" />
+
+        <div class="hero-media reveal" data-delay="2">
+          <div class="hero-frame">
+            <picture>
+              <source srcset="assets/img/iris-hero-still.webp" type="image/webp" media="(prefers-reduced-motion: reduce)" />
+              <img src="assets/img/iris-hero.gif" width="1400" height="1400" alt="Animation of IRIS on a patient's abdomen: the guide is aligned to the red CT gantry laser over the skin entry site, then its angle scale is raised and a biopsy needle is advanced through the center hub." fetchpriority="high" />
+            </picture>
+          </div>
+          <div class="hero-chip hero-chip--a">
+            <span class="ico"><svg aria-hidden="true"><use href="#i-crosshair" /></svg></span>
+            <span>Aligned to the CT laser<small>at the skin entry site</small></span>
+          </div>
+          <div class="hero-chip hero-chip--b">
+            <span class="ico"><svg aria-hidden="true"><use href="#i-box" /></svg></span>
+            <span>Single-use<small>No capital equipment</small></span>
+          </div>
+          <p class="hero-caption">Illustrative rendering of IRIS in use.</p>
         </div>
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
-      <h2 class="text-2xl font-bold text-slate-900 mb-10 text-center">How IRIS Works</h2>
-      <p class="mt-5 text-lg text-slate-700 text-center">
-        From procedure planning to needle placement, IRIS delivers confidence and efficiency at every step
-      </p>
-      <br />
+    <!-- ============ Trust strip ============ -->
+    <div class="trust">
+      <div class="container trust-inner">
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-building" /></svg><span>Incubated at <strong>Vanderbilt University Medical Center</strong></span></div>
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-stethoscope" /></svg><span>Designed by an <strong>interventional radiologist</strong></span></div>
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-layers" /></svg><span>Fits the <strong>standard CT workflow</strong></span></div>
+        <div class="trust-item"><svg aria-hidden="true"><use href="#i-shield" /></svg><span><strong>Patent pending</strong></span></div>
+      </div>
+    </div>
 
-      <div class="grid gap-8 sm:grid-cols-3">
-        <!-- Step 1 -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">Step 1</h3>
-          <p class="text-slate-700 text-sm mb-4">Align IRIS on skin entry site.</p>
-          <img src="IRIS 1.png" alt="Step 1: Identify angle and distance" class="mx-auto h-48 w-auto object-contain" />
+    <!-- ============ Problem ============ -->
+    <section class="section" id="problem" aria-labelledby="problem-title">
+      <div class="container problem-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">The problem</p>
+          <h2 class="h2" id="problem-title">CT-guided procedures are precise by design, <em>but still aligned by eye.</em></h2>
+          <p class="lead">Most CT-guided needle placement still depends on the operator carrying an angle from the screen to the patient by eye, then scanning to check, adjusting, and scanning again.</p>
+          <div class="big-figure">
+            <div class="num">~2 <em>million</em></div>
+            <p>CT-guided biopsies performed in the U.S. every year, plus aspirations, drain placements, ablations, and injections.</p>
+          </div>
         </div>
 
-        <!-- Step 2 -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">Step 2</h3>
-          <p class="text-slate-700 text-sm mb-4">Identify distance and entry angle to lesion.</p>
-          <img src="IRIS 2.png" alt="Step 2: Position IRIS" class="mx-auto h-48 w-auto object-contain" />
-        </div>
-
-        <!-- Step 3 -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">Step 3</h3>
-          <p class="text-slate-700 text-sm mb-4">Position needle to calculated angle & depth.</p>
-          <img src="IRIS 3.png" alt="Step 3: Position needle" class="mx-auto h-48 w-auto object-contain" />
+        <div class="problem-list">
+          <article class="problem-card reveal">
+            <span class="icon-tile"><svg aria-hidden="true"><use href="#i-scan" /></svg></span>
+            <div>
+              <h3>Every check scan adds dose</h3>
+              <p>Each confirmation scan adds radiation exposure for the patient and for the clinicians at the table.</p>
+            </div>
+          </article>
+          <article class="problem-card reveal" data-delay="1">
+            <span class="icon-tile"><svg aria-hidden="true"><use href="#i-clock" /></svg></span>
+            <div>
+              <h3>Rescans tie up the CT suite</h3>
+              <p>Repositioning and rescanning extend procedure and sedation time, and limit how many patients a scanner can serve each day.</p>
+            </div>
+          </article>
+          <article class="problem-card reveal" data-delay="2">
+            <span class="icon-tile"><svg aria-hidden="true"><use href="#i-target" /></svg></span>
+            <div>
+              <h3>Small errors compound with depth</h3>
+              <p>A few degrees off at the skin becomes millimeters off at the target, often next to structures you have to avoid. Complications are costly for everyone.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Intro Video Section -->
-    <section id="introduction" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">IRIS Device Introduction</h2>
-      <p class="mt-5 text-lg text-slate-700 text-center">Incubated at Vanderbilt University Medical Center</p>
-      <br />
-
-      <!-- Responsive Vimeo embed -->
-      <div
-        class="relative w-full overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200"
-        style="padding-top: 56.25%"
-      >
-        <iframe
-          src="https://player.vimeo.com/video/1120831240?badge=0&autopause=0&byline=0&title=0"
-          title="IRIS Introduction by Dr. Dann Martin"
-          class="absolute left-0 top-0 h-full w-full"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
-      </div>
-
-      <script src="https://player.vimeo.com/api/player.js"></script>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="text-2xl font-bold text-slate-900 mb-10 text-center">Meet the IRIS Team</h2>
-
-      <div class="grid gap-8 sm:grid-cols-2">
-        <!-- Team Member 1 -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-          <img
-            src="Dann Martin.png"
-            alt="Dann Martin, MD"
-            class="mx-auto h-32 w-32 rounded-full object-cover ring-2 ring-[color:var(--iris-teal)] mb-4"
-          />
-          <h3 class="text-lg font-semibold text-slate-900">Dr. Dann Martin</h3>
-          <p class="text-sm text-slate-500 mb-3">Founder & CEO</p>
-          <p class="text-slate-700 text-sm mb-4">
-            Assistant Professor of Neuroradiology at Vanderbilt University and an interventional radiologist with over a
-            decade of CT-guided procedure experience. Dann trained at Johns Hopkins, Tufts, Lahey, and Stanford and is
-            passionate about simplifying biopsy workflows to improve patient outcomes.
-          </p>
-          <!-- LinkedIn Icon -->
-          <a
-            href="https://www.linkedin.com/in/dann-martin-md-ms-75003593/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[color:var(--iris-teal)] text-white hover:opacity-90 transition"
-          >
-            <!-- LinkedIn SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 
-            2.76 2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5v-14c0-2.76-2.24-5-5-5zm-11 
-            19h-3v-10h3v10zm-1.5-11.27c-.97 
-            0-1.75-.79-1.75-1.76s.78-1.76 
-            1.75-1.76 1.75.79 
-            1.75 1.76-.78 1.76-1.75 
-            1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 
-            0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.37h.04c.4-.75 
-            1.38-1.54 2.85-1.54 3.05 0 3.62 2.01 
-            3.62 4.63v5.54z"
-              />
-            </svg>
-          </a>
+    <!-- ============ Evidence ============ -->
+    <section class="section section--dark evidence" id="evidence" aria-labelledby="evidence-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Preclinical results</p>
+          <h2 class="h2" id="evidence-title">Measured in the lab. <em>Built for the CT suite.</em></h2>
+          <p class="lead">In head-to-head testing against standard technique, IRIS shortened needle alignment and cut the radiation needed to confirm placement.</p>
         </div>
 
-        <!-- Team Member 2 -->
-        <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200 text-center">
-          <img
-            src="Jonathan Sadlowe.png"
-            alt="Jonathan Sadlowe, MBA"
-            class="mx-auto h-32 w-32 rounded-full object-cover ring-2 ring-[color:var(--iris-teal)] mb-4"
-          />
-          <h3 class="text-lg font-semibold text-slate-900">Jonathan Sadlowe, MBA</h3>
-          <p class="text-sm text-slate-500 mb-3">Co-Founder & COO</p>
-          <p class="text-slate-700 text-sm mb-4">
-            Co-Founder and COO of IRIS and Entrepreneur-in-Residence at Vanderbilt University Medical Center. Jon was
-            previously CMO at Spacious (acquired by WeWork) and Marketing Manager at Google Cloud, with a background
-            spanning healthcare, venture capital, and SaaS commercialization.
-          </p>
-          <!-- LinkedIn Icon -->
-          <a
-            href="https://www.linkedin.com/in/jonathansadlowe/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[color:var(--iris-teal)] text-white hover:opacity-90 transition"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 
-            2.76 2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5v-14c0-2.76-2.24-5-5-5zm-11 
-            19h-3v-10h3v10zm-1.5-11.27c-.97 
-            0-1.75-.79-1.75-1.76s.78-1.76 
-            1.75-1.76 1.75.79 
-            1.75 1.76-.78 1.76-1.75 
-            1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 
-            0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.37h.04c.4-.75 
-            1.38-1.54 2.85-1.54 3.05 0 3.62 2.01 
-            3.62 4.63v5.54z"
-              />
-            </svg>
-          </a>
+        <div class="stat-grid">
+          <div class="stat reveal">
+            <div class="num"><span data-count="33">33</span><em>%</em></div>
+            <h3>Faster needle alignment</h3>
+            <p>A calibrated angle reference at the skin means less trial and error between planning and placement.</p>
+          </div>
+          <div class="stat reveal" data-delay="1">
+            <div class="num"><span data-count="53">53</span><em>%</em></div>
+            <h3>Reduction in radiation exposure</h3>
+            <p>Getting the angle right sooner means fewer confirmation scans for patients and the care team.</p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Signup Section with Typeform -->
-    <section id="signup" class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Get Early Access</h2>
-      <p class="mt-5 text-lg text-slate-700 text-center">
-        We are looking for Interventional Radiologists to help test and pilot IRIS
-      </p>
-      <br />
-      <div class="bg-white rounded-2xl p-6 shadow-xl ring-1 ring-slate-200">
-        <div data-tf-live="01K5QCXTXHMGHXPVSNVT2N98PD"></div>
-        <script src="//embed.typeform.com/next/embed.js"></script>
-      </div>
-    </section>
-
-    <!-- Regulatory Disclaimer Section -->
-    <section class="bg-slate-100 border-t border-slate-200 py-6">
-      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-sm text-slate-600">
-          <strong>Regulatory Disclaimer:</strong> IRIS is an investigational device currently in the research and
-          development phase. It has
-          <strong>not been cleared or approved by the U.S. Food and Drug Administration (FDA)</strong> and is
-          <strong>not available for clinical use, patient care, or commercial sale</strong>. Any information provided on
-          this website is for <strong>educational and research purposes only</strong> and should not be interpreted as
-          medical advice.
+        <p class="footnote" id="fn-1">
+          1. IRIS Biopsy internal preclinical study, 2025, compared with standard technique. These are preclinical results; clinical performance has not been established.
         </p>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-200">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 text-center">
-        <p>© <span id="year"></span> IRIS Biopsy, Inc. All rights reserved.</p>
-        <p class="mt-2 text-xs text-slate-500">
-          IRIS is an investigational device, not FDA cleared, and not yet available for clinical use.
-        </p>
+    <!-- ============ How it works ============ -->
+    <section class="section section--light" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="h2" id="how-title">Three steps. <em>No new equipment.</em></h2>
+          <p class="lead">IRIS works with the planning scan you already take. Measure the angle, match it on the device, and advance with confidence.</p>
+        </div>
+
+        <ol class="steps" role="list" style="list-style:none;margin:0;padding:0">
+          <li class="step reveal">
+            <div class="step-media"><img src="assets/img/step-1-align.svg" width="480" height="320" alt="Top view: IRIS sits on the skin over the entry mark, with its base along the red CT gantry laser line." loading="lazy" /></div>
+            <div class="step-body">
+              <p class="step-num">Step 01</p>
+              <h3>Align IRIS at the skin entry site</h3>
+              <p>Place IRIS over the marked entry site with its base along the CT gantry laser, so the guide sits in the same plane as your planning slice.</p>
+            </div>
+          </li>
+          <li class="step reveal" data-delay="1">
+            <div class="step-media"><img src="assets/img/step-2-measure.svg" width="480" height="320" alt="Axial CT planning slice showing a trajectory from the skin entry point to the target at 49 degrees and 9.2 centimeters deep." loading="lazy" /></div>
+            <div class="step-body">
+              <p class="step-num">Step 02</p>
+              <h3>Identify the entry angle and depth</h3>
+              <p>On the planning scan, measure the angle of approach and the distance from skin to lesion. These are the same measurements you take today.</p>
+            </div>
+          </li>
+          <li class="step reveal" data-delay="2">
+            <div class="step-media"><img src="assets/img/step-3-advance.svg" width="480" height="320" alt="Cross-section showing the needle passing through the IRIS hub along the 49 degree mark and advancing to the lesion at the measured depth." loading="lazy" /></div>
+            <div class="step-body">
+              <p class="step-num">Step 03</p>
+              <h3>Advance at the calculated angle</h3>
+              <p>Set the needle against the matching mark on the IRIS scale and advance to the measured depth, with fewer adjustments and fewer check scans.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="spec-row reveal">
+          <div class="spec"><svg aria-hidden="true"><use href="#i-check-circle" /></svg><span><strong>Single-use</strong>Disposable, one per procedure</span></div>
+          <div class="spec"><svg aria-hidden="true"><use href="#i-check-circle" /></svg><span><strong>Skin-mounted</strong>Sits at the entry site, in plane</span></div>
+          <div class="spec"><svg aria-hidden="true"><use href="#i-check-circle" /></svg><span><strong>Calibrated scale</strong>Read the angle like a protractor</span></div>
+          <div class="spec"><svg aria-hidden="true"><use href="#i-check-circle" /></svg><span><strong>Nothing to install</strong>No software, power, or capital</span></div>
+        </div>
+
+        <div class="procedures reveal">
+          <span class="label">Designed for CT-guided</span>
+          <span class="chip">Biopsy</span>
+          <span class="chip">Aspiration</span>
+          <span class="chip">Drain placement</span>
+          <span class="chip">Ablation</span>
+          <span class="chip">Therapeutic injection</span>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <!-- ============ Benefits ============ -->
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who benefits</p>
+          <h2 class="h2" id="benefits-title">Value at every level of care, <em>from the needle to the network.</em></h2>
+          <p class="lead">IRIS is a simple device with an outsized effect. Here's what it means for each person who touches a CT-guided procedure.</p>
+        </div>
 
-    <script type="text/javascript">
-      _linkedin_partner_id = "8024780";
-      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script>
-    <script type="text/javascript">
-      (function (l) {
-        if (!l) {
-          window.lintrk = function (a, b) {
-            window.lintrk.q.push([a, b]);
-          };
-          window.lintrk.q = [];
-        }
-        var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script");
-        b.type = "text/javascript";
-        b.async = true;
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);
-      })(window.lintrk);
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        alt=""
-        src="https://px.ads.linkedin.com/collect/?pid=8024780&fmt=gif"
-      />
-    </noscript>
-  </body>
+        <div class="benefit-grid">
+          <article class="benefit reveal">
+            <div class="benefit-top">
+              <span class="benefit-who"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-stethoscope" /></svg></span>Clinicians</span>
+              <span class="metric">33% faster alignment<sup class="fn">1</sup></span>
+            </div>
+            <h3>Plan the angle. Hit the angle.</h3>
+            <ul class="checks">
+              <li>A calibrated, physical reference replaces estimating the angle by eye.</li>
+              <li>Fewer repositionings and check scans between planning and placement.</li>
+              <li>Builds confidence for trainees and standardizes technique across operators.</li>
+              <li>No software, setup, or new hardware to learn.</li>
+            </ul>
+          </article>
+
+          <article class="benefit reveal" data-delay="1">
+            <div class="benefit-top">
+              <span class="benefit-who"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-heart" /></svg></span>Patients</span>
+              <span class="metric">53% less radiation<sup class="fn">1</sup></span>
+            </div>
+            <h3>Less dose. Less time on the table.</h3>
+            <ul class="checks">
+              <li>Fewer confirmation scans means lower radiation exposure.</li>
+              <li>Fewer needle adjustments, designed to reduce the risk of complications.</li>
+              <li>Shorter procedures can mean less time under sedation.</li>
+            </ul>
+          </article>
+
+          <article class="benefit reveal">
+            <div class="benefit-top">
+              <span class="benefit-who"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-calendar" /></svg></span>Practices</span>
+              <span class="metric metric--teal">$0 capital equipment</span>
+            </div>
+            <h3>More cases through the same CT suite.</h3>
+            <ul class="checks">
+              <li>Faster setup and alignment free up scanner time for more procedures per day.</li>
+              <li>No capital purchase, maintenance, or service contract.</li>
+              <li>Drops into existing procedure kits and workflows without retraining staff.</li>
+            </ul>
+          </article>
+
+          <article class="benefit reveal" data-delay="1">
+            <div class="benefit-top">
+              <span class="benefit-who"><span class="icon-tile"><svg aria-hidden="true"><use href="#i-building" /></svg></span>Health systems</span>
+              <span class="metric metric--teal">Per-procedure cost</span>
+            </div>
+            <h3>Precision without a capital request.</h3>
+            <ul class="checks">
+              <li>A single-use supply item, with no capital committee and nothing to install.</li>
+              <li>Supports radiation-safety (ALARA) goals for patients and staff.</li>
+              <li>Consistent technique across sites, operators, and training programs.</li>
+              <li>Better scanner utilization and fewer costly complications.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Compare ============ -->
+    <section class="section section--light" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why IRIS</p>
+          <h2 class="h2" id="compare-title">The precision of guidance. <em>The simplicity of a disposable.</em></h2>
+          <p class="lead">Freehand technique costs nothing up front but depends on experience. Navigation and robotic systems add precision at a significant price. IRIS sits in between.</p>
+        </div>
+
+        <div class="compare-wrap reveal">
+          <table class="compare">
+            <caption class="visually-hidden">Comparison of freehand technique, navigation and robotic systems, and IRIS</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Attribute</span></th>
+                <th scope="col">Freehand</th>
+                <th scope="col">Navigation &amp; robotics</th>
+                <th scope="col" class="is-iris"><img src="assets/img/iris-logo.svg" alt="IRIS" width="74" height="14" /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Capital equipment</th>
+                <td data-label="Freehand">None</td>
+                <td data-label="Navigation">Significant purchase</td>
+                <td data-label="IRIS" class="is-iris">None</td>
+              </tr>
+              <tr>
+                <th scope="row">Setup</th>
+                <td data-label="Freehand">None</td>
+                <td data-label="Navigation">Dedicated setup and registration</td>
+                <td data-label="IRIS" class="is-iris">Place on skin and align to laser</td>
+              </tr>
+              <tr>
+                <th scope="row">Angle reference</th>
+                <td data-label="Freehand">Visual estimate</td>
+                <td data-label="Navigation">Software-guided</td>
+                <td data-label="IRIS" class="is-iris">Calibrated physical scale</td>
+              </tr>
+              <tr>
+                <th scope="row">Confirmation scans</th>
+                <td data-label="Freehand">Frequent</td>
+                <td data-label="Navigation">Reduced</td>
+                <td data-label="IRIS" class="is-iris"><span>Reduced: 53% less radiation in testing<sup class="fn">1</sup></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Learning curve</th>
+                <td data-label="Freehand">Experience-dependent</td>
+                <td data-label="Navigation">Vendor training program</td>
+                <td data-label="IRIS" class="is-iris">Intuitive, reads like a protractor</td>
+              </tr>
+              <tr>
+                <th scope="row">Footprint in the suite</th>
+                <td data-label="Freehand">None</td>
+                <td data-label="Navigation">Console or cart</td>
+                <td data-label="IRIS" class="is-iris">Fits in a procedure kit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Video ============ -->
+    <section class="section section--dark" id="video" aria-labelledby="video-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Introduction</p>
+          <h2 class="h2" id="video-title">See IRIS <em>in action.</em></h2>
+        </div>
+        <div class="video-frame reveal">
+          <!-- Video: to swap, paste the new embed's src URL here, including its ?h= value -->
+          <iframe
+            src="https://player.vimeo.com/video/1120831240?h=96beb7e7fe&amp;badge=0&amp;autopause=0&amp;byline=0&amp;title=0&amp;dnt=1"
+            title="IRIS device introduction"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <span>IRIS device introduction</span>
+          <span>Incubated at Vanderbilt University Medical Center</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Team ============ -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Team</p>
+          <h2 class="h2" id="team-title">Founded at Vanderbilt. <em>Built for every CT suite.</em></h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="person reveal">
+            <div class="avatar">
+              <span class="initials" aria-hidden="true">DM</span>
+              <img src="assets/img/team-dann-martin.webp" alt="Dr. Dann Martin" width="400" height="400" loading="lazy" data-fallback />
+            </div>
+            <div>
+              <h3>Dr. Dann Martin</h3>
+              <p class="role">Founder &amp; CEO</p>
+              <p>Assistant Professor of Neuroradiology at Vanderbilt University and an interventional radiologist with over a decade of CT-guided procedure experience. Dann trained at Johns Hopkins, Tufts, Lahey, and Stanford and is passionate about simplifying biopsy workflows to improve patient outcomes.</p>
+              <div class="links">
+                <a class="icon-link" href="https://www.linkedin.com/in/dann-martin-md-ms-75003593/" target="_blank" rel="noopener">
+                  <svg aria-hidden="true"><use href="#i-linkedin" /></svg>LinkedIn<span class="visually-hidden"> profile for Dann Martin (opens in a new tab)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="person reveal" data-delay="1">
+            <div class="avatar">
+              <span class="initials" aria-hidden="true">JS</span>
+              <img src="assets/img/team-jonathan-sadlowe.webp" alt="Jonathan Sadlowe" width="400" height="400" loading="lazy" data-fallback />
+            </div>
+            <div>
+              <h3>Jonathan Sadlowe, MBA</h3>
+              <p class="role">Co-Founder &amp; COO</p>
+              <p>Co-Founder and COO of IRIS and Entrepreneur-in-Residence at Vanderbilt University Medical Center. Jon was previously CMO at Spacious (acquired by WeWork) and Marketing Manager at Google Cloud, with a background spanning healthcare, venture capital, and SaaS commercialization.</p>
+              <div class="links">
+                <a class="icon-link" href="https://www.linkedin.com/in/jonathansadlowe/" target="_blank" rel="noopener">
+                  <svg aria-hidden="true"><use href="#i-linkedin" /></svg>LinkedIn<span class="visually-hidden"> profile for Jonathan Sadlowe (opens in a new tab)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Early access ============ -->
+    <section class="section section--dark" id="early-access" aria-labelledby="access-title">
+      <div class="container access-grid">
+        <div class="access-copy reveal">
+          <p class="eyebrow">Early access</p>
+          <h2 class="h2" id="access-title">Request a non-clinical <em>evaluation unit.</em></h2>
+          <p class="lead">We're placing a limited number of non-clinical IRIS units with interventional radiology teams ahead of our clinical pilot. Get hands-on, tell us what you think, and help shape the device.</p>
+
+          <ul class="offer">
+            <li><span class="n">01</span><div><strong>A non-clinical IRIS unit</strong><span>For hands-on bench and phantom evaluation with your team.</span></div></li>
+            <li><span class="n">02</span><div><strong>A walkthrough with our founders</strong><span>See the workflow, ask questions, and share what your suite needs.</span></div></li>
+            <li><span class="n">03</span><div><strong>Priority for the clinical pilot</strong><span>First consideration for pilot sites and early production units.</span></div></li>
+          </ul>
+
+          <p class="access-note">Evaluation units are for demonstration only and are not for use on patients.</p>
+          <p class="direct">Prefer email? Reach us at <a href="mailto:info@irisbiopsy.com">info@irisbiopsy.com</a></p>
+        </div>
+
+        <div class="form-card reveal" data-delay="1" id="access-card">
+          <div class="form-head">
+            <h3>Tell us about your team</h3>
+            <p>We'll follow up within two business days.</p>
+          </div>
+
+          <!--
+            Submissions go to HubSpot. Add the IRIS portal ID and form ID in js/config.js
+            (see README.md, "Connect the early access form to HubSpot").
+          -->
+          <form id="access-form" action="mailto:info@irisbiopsy.com" method="post" enctype="text/plain" novalidate>
+            <input type="hidden" name="utm_source" />
+            <input type="hidden" name="utm_medium" />
+            <input type="hidden" name="utm_campaign" />
+            <input type="hidden" name="referrer" />
+            <div class="hp" aria-hidden="true">
+              <label for="f-website">Leave this field empty</label>
+              <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-first">First name</label>
+                <input class="input" id="f-first" name="firstname" type="text" autocomplete="given-name" required placeholder="Jane" />
+                <span class="field-error">Please enter your first name.</span>
+              </div>
+              <div class="field">
+                <label for="f-last">Last name</label>
+                <input class="input" id="f-last" name="lastname" type="text" autocomplete="family-name" required placeholder="Smith" />
+                <span class="field-error">Please enter your last name.</span>
+              </div>
+              <div class="field">
+                <label for="f-email">Work email</label>
+                <input class="input" id="f-email" name="email" type="email" autocomplete="email" required placeholder="jane.smith@hospital.org" />
+                <span class="field-error">Please enter a valid email address.</span>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone <span class="opt">(optional)</span></label>
+                <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(615) 555-0123" />
+                <span class="field-error">Please enter a valid phone number, or leave it blank.</span>
+              </div>
+              <div class="field">
+                <label for="f-org">Institution or practice</label>
+                <input class="input" id="f-org" name="institution" type="text" autocomplete="organization" required placeholder="University Medical Center" />
+                <span class="field-error">Please enter your institution or practice.</span>
+              </div>
+              <div class="field">
+                <label for="f-role">Role</label>
+                <select class="input" id="f-role" name="role" required>
+                  <option value="" selected disabled>Select your role</option>
+                  <option>Interventional radiologist</option>
+                  <option>Diagnostic radiologist</option>
+                  <option>IR fellow or resident</option>
+                  <option>Radiologic / CT technologist</option>
+                  <option>Nurse, PA, or NP</option>
+                  <option>Department or practice administrator</option>
+                  <option>Supply chain or value analysis</option>
+                  <option>Investor or strategic partner</option>
+                  <option>Other</option>
+                </select>
+                <span class="field-error">Please select your role.</span>
+              </div>
+              <div class="field field--full">
+                <label for="f-volume">CT-guided cases per month at your site <span class="opt">(optional)</span></label>
+                <select class="input" id="f-volume" name="monthly_volume">
+                  <option value="" selected>Select a range</option>
+                  <option>Fewer than 20</option>
+                  <option>20–50</option>
+                  <option>50–100</option>
+                  <option>More than 100</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+              <fieldset class="field field--full">
+                <legend>I'm interested in <span class="opt">(select all that apply)</span></legend>
+                <div class="checkset">
+                  <label class="check"><input type="checkbox" name="interest" value="Evaluation unit" checked /> Evaluation unit</label>
+                  <label class="check"><input type="checkbox" name="interest" value="Clinical pilot" /> Clinical pilot</label>
+                  <label class="check"><input type="checkbox" name="interest" value="Product demo" /> Product demo</label>
+                  <label class="check"><input type="checkbox" name="interest" value="Partnership or investment" /> Partnership or investment</label>
+                </div>
+              </fieldset>
+              <div class="field field--full">
+                <label for="f-msg">Anything else we should know? <span class="opt">(optional)</span></label>
+                <textarea class="input" id="f-msg" name="message" rows="3" placeholder="Procedure mix, scanner setup, timing, questions…"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary btn--block" type="submit">
+                <span class="btn-label">Request early access</span>
+                <svg aria-hidden="true"><use href="#i-arrow" /></svg>
+              </button>
+              <p class="form-legal">We'll only use your information to follow up about IRIS.</p>
+            </div>
+            <div class="form-status" role="alert" aria-live="assertive"></div>
+          </form>
+
+          <div class="form-success" role="status" aria-live="polite" tabindex="-1">
+            <div class="success-mark"><svg aria-hidden="true"><use href="#i-check" /></svg></div>
+            <h3>Thank you. You're on the list.</h3>
+            <p>We've received your request and will be in touch within two business days to coordinate your evaluation unit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/img/iris-logo-white.svg" alt="IRIS" width="137" height="26" />
+          <p>A single-use, skin-mounted needle guide for faster, safer CT-guided procedures. Incubated at Vanderbilt University Medical Center.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#evidence">Evidence</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#early-access">Get early access</a></li>
+            <li><a href="mailto:info@irisbiopsy.com">info@irisbiopsy.com</a></li>
+            <li><a href="https://www.linkedin.com/in/dann-martin-md-ms-75003593/" target="_blank" rel="noopener">Dann on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/jonathansadlowe/" target="_blank" rel="noopener">Jon on LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        <strong>Regulatory Disclaimer:</strong> IRIS is an investigational device currently in the research and development phase. It has <strong>not been cleared or approved by the U.S. Food and Drug Administration (FDA)</strong> and is <strong>not available for clinical use, patient care, or commercial sale</strong>. Any information provided on this website is for <strong>educational and research purposes only</strong> and should not be interpreted as medical advice.
+      </p>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> IRIS Biopsy, Inc. All rights reserved.</span>
+        <span>IRIS is an investigational device, not FDA cleared, and not yet available for clinical use.</span>
+      </div>
+    </div>
+  </footer>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://px.ads.linkedin.com/collect/?pid=8024780&amp;fmt=gif" /></noscript>
+</body>
 </html>
