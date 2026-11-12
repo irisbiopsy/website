@@ -20,7 +20,7 @@ window.IRIS_CONFIG = {
   // Company pages, shown as icons in the footer. Paste the full address;
   // leave one as "" to hide its icon.
   social: {
-    linkedin: "", // e.g. "https://www.linkedin.com/company/your-page-name/"
+    linkedin: "https://www.linkedin.com/company/iris-biopsy/",
     youtube: "https://www.youtube.com/@IRISBiopsy"
   },
 
