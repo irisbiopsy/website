@@ -15,6 +15,18 @@
     el.textContent = String(new Date().getFullYear());
   });
 
+  /* ---------- Footer social icons (addresses in js/config.js) ---------- */
+  var SOCIAL = CONFIG.social || {};
+  document.querySelectorAll("[data-social]").forEach(function (item) {
+    var url = SOCIAL[item.getAttribute("data-social")];
+    var link = item.querySelector("a");
+    if (typeof url !== "string" || !link) return; // not in config: leave as written
+    url = url.trim();
+    if (url && !/^https?:\/\//i.test(url)) url = "https://" + url;
+    if (url) link.href = url;
+    item.hidden = !url;
+  });
+
   /* ---------- Header shadow on scroll ---------- */
   var header = document.querySelector(".site-header");
   function onScroll() {

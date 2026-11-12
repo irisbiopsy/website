@@ -169,5 +169,9 @@ Old links keep working: `irisbiopsy.com/index.html#top` redirects to the home pa
 - **Step diagrams:** `assets/img/step-1-align.svg`, `step-2-measure.svg`,
   `step-3-advance.svg`. Replace them with renders or photos (any format) and update the
   three `src` attributes.
+- **Social icons (footer):** the LinkedIn and YouTube addresses are under `social` in
+  `js/config.js`. Paste a full address to show an icon; leave it as `""` to hide it. When
+  the LinkedIn address is set, add it to the `sameAs` list near the top of `index.html` too,
+  so search engines link the pages to IRIS.
 - **Regulatory disclaimer:** in the footer. Update it whenever the device's regulatory
   status changes.

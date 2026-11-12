@@ -17,6 +17,13 @@ window.IRIS_CONFIG = {
     sendJobTitle: true
   },
 
+  // Company pages, shown as icons in the footer. Paste the full address;
+  // leave one as "" to hide its icon.
+  social: {
+    linkedin: "", // e.g. "https://www.linkedin.com/company/your-page-name/"
+    youtube: "https://www.youtube.com/@IRISBiopsy"
+  },
+
   // Carried over from the previous site.
   googleAnalyticsId: "G-VTQXTF7QM9",
   linkedInPartnerId: "8024780",
