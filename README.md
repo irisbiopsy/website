@@ -163,6 +163,11 @@ Old links keep working: `irisbiopsy.com/index.html#top` redirects to the home pa
 - **Hero animation:** replace `assets/img/iris-hero.gif` with a file of the same name.
   `assets/img/iris-hero-still.webp` is the still frame shown to visitors who have
   "reduce motion" turned on; swap it too if the animation changes.
+- **Device clips ("The device" section):** `assets/video/iris-fold`, `iris-spin` and
+  `iris-explode`, each as .mp4 plus a .webm backup, 4:3 with no sound, and a still frame
+  for each in `assets/img/clip-*.webp`. They play only while on screen, each has a pause
+  button, and visitors with "reduce motion" turned on see a still. To swap a clip, keep
+  the same file names and shape (960×720).
 - **Team photos:** `assets/img/team-dann-martin.webp` and
   `assets/img/team-jonathan-sadlowe.webp` (square, 400×400). If a photo is missing, the
   card shows initials instead.

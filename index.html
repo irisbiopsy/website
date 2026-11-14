@@ -73,6 +73,8 @@
       <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
       <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
       <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5v-7Z" fill="currentColor"/></symbol>
+      <symbol id="i-play-solid" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="4" width="5" height="16" rx="1.2"/><rect x="14" y="4" width="5" height="16" rx="1.2"/></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
       <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
       <symbol id="i-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z"/></symbol>
@@ -242,6 +244,64 @@
         <p class="footnote" id="fn-1">
           1. IRIS Biopsy internal preclinical study, 2025, compared with standard technique. These are preclinical results; clinical performance has not been established.
         </p>
+      </div>
+    </section>
+
+    <!-- ============ Device clips ============ -->
+    <!-- Clips: assets/video/iris-*.mp4 (4:3, no sound). Each plays while on screen; data-still
+         is the second shown, without motion, to visitors who turn on "reduce motion". -->
+    <section class="section" id="device" aria-labelledby="device-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The device</p>
+          <h2 class="h2" id="device-title">Lies flat. <em>Stands true.</em></h2>
+          <p class="lead">One molded guide. IRIS sits flat on the skin, folds up into a calibrated angle scale, and shows up on the scan.</p>
+        </div>
+
+        <ul class="clips" role="list">
+          <li class="clip reveal">
+            <div class="clip-media">
+              <video muted loop playsinline preload="none" width="960" height="720" poster="assets/img/clip-fold.webp" data-still="3.4" aria-label="Animation: IRIS lies flat, then one half folds up into an angle scale.">
+                <source src="assets/video/iris-fold.mp4" type="video/mp4" />
+                <source src="assets/video/iris-fold.webm" type="video/webm" />
+              </video>
+              <button class="clip-toggle" type="button" aria-label="Play animation" hidden>
+                <svg class="i-play" aria-hidden="true"><use href="#i-play-solid" /></svg>
+                <svg class="i-pause" aria-hidden="true"><use href="#i-pause" /></svg>
+              </button>
+            </div>
+            <h3>Folds up at the skin</h3>
+            <p>It lies flat over the entry site. One half folds up to stand in the plane of the scan, scale toward you.</p>
+          </li>
+          <li class="clip reveal" data-delay="1">
+            <div class="clip-media">
+              <video muted loop playsinline preload="none" width="960" height="720" poster="assets/img/clip-spin.webp" data-still="0" aria-label="Animation: IRIS turns to show its front, with angle scales on both halves, and its ribbed back.">
+                <source src="assets/video/iris-spin.mp4" type="video/mp4" />
+                <source src="assets/video/iris-spin.webm" type="video/webm" />
+              </video>
+              <button class="clip-toggle" type="button" aria-label="Play animation" hidden>
+                <svg class="i-play" aria-hidden="true"><use href="#i-play-solid" /></svg>
+                <svg class="i-pause" aria-hidden="true"><use href="#i-pause" /></svg>
+              </button>
+            </div>
+            <h3>A scale on both halves</h3>
+            <p>Angle marks from 30° to 150° on each side of the hinge, with a needle cradle at the center.</p>
+          </li>
+          <li class="clip reveal" data-delay="2">
+            <div class="clip-media">
+              <video muted loop playsinline preload="none" width="960" height="720" poster="assets/img/clip-explode.webp" data-still="0.8" aria-label="Animation: exploded view of IRIS, with the radiopaque ink layer separating from the needle cradle.">
+                <source src="assets/video/iris-explode.mp4" type="video/mp4" />
+                <source src="assets/video/iris-explode.webm" type="video/webm" />
+              </video>
+              <button class="clip-toggle" type="button" aria-label="Play animation" hidden>
+                <svg class="i-play" aria-hidden="true"><use href="#i-play-solid" /></svg>
+                <svg class="i-pause" aria-hidden="true"><use href="#i-pause" /></svg>
+              </button>
+            </div>
+            <h3>Visible on the scan</h3>
+            <p>Radiopaque ink marks the needle cradle, so the entry point shows up on CT.</p>
+          </li>
+        </ul>
       </div>
     </section>
 

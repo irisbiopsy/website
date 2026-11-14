@@ -634,6 +634,56 @@ sup.fn a { text-decoration: none; color: inherit; }
   max-width: 52rem;
 }
 
+/* ---------- Device clips ---------- */
+.clips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.clip { display: flex; flex-direction: column; }
+.clip-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #3b3b3b; /* same gray as the renders, so the clips blend into the card */
+}
+.clip-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.clip h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 1.8vw, 1.55rem);
+  line-height: 1.15;
+  margin: 22px 0 8px;
+}
+.clip p { margin: 0; color: var(--muted); font-size: 15.5px; max-width: 30rem; }
+.clip-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  background: rgba(11, 24, 41, 0.55);
+  color: var(--white);
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+.clip-toggle[hidden] { display: none; }
+.clip-toggle:hover,
+.clip-toggle:focus-visible { opacity: 1; background: rgba(11, 24, 41, 0.85); }
+.clip-toggle svg { width: 14px; height: 14px; }
+.clip-toggle .i-pause,
+.clip.is-playing .clip-toggle .i-play { display: none; }
+.clip.is-playing .clip-toggle .i-pause { display: block; }
+
 /* ---------- How it works ---------- */
 .steps {
   display: grid;
@@ -1217,6 +1267,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .hero-chip--a { left: 12px; }
   .hero-chip--b { right: 12px; }
   .steps { grid-template-columns: minmax(0, 1fr); max-width: 640px; }
+  .clips { grid-template-columns: minmax(0, 1fr); max-width: 640px; gap: 40px; }
   .step { display: grid; grid-template-columns: minmax(0, 1fr); }
   .benefit-grid,
   .team-grid { grid-template-columns: minmax(0, 1fr); }

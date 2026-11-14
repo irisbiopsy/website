@@ -121,6 +121,61 @@
     counters.forEach(function (el) { countObserver.observe(el); });
   }
 
+  /* ---------- Device clips: play while on screen, with a pause button ----------
+     Visitors with "reduce motion" on see a still frame (data-still) until they press play. */
+  document.querySelectorAll(".clip").forEach(function (clip) {
+    var video = clip.querySelector("video");
+    var button = clip.querySelector(".clip-toggle");
+    if (!video || !button) return;
+    var userPaused = reduceMotion;
+    var onScreen = false;
+    var stillShown = false;
+
+    function play() {
+      var started = video.play();
+      if (started && started.catch) started.catch(function () {});
+    }
+    function render() {
+      var playing = !video.paused;
+      clip.classList.toggle("is-playing", playing);
+      button.setAttribute("aria-label", playing ? "Pause animation" : "Play animation");
+    }
+    function showStill() {
+      if (stillShown) return;
+      stillShown = true;
+      var still = parseFloat(video.getAttribute("data-still") || "0");
+      if (!(still > 0)) return;
+      video.preload = "auto";
+      video.addEventListener("loadedmetadata", function () { video.currentTime = still; }, { once: true });
+      video.load();
+    }
+    function update() {
+      if (onScreen && !userPaused) play();
+      else if (!video.paused) video.pause();
+      if (onScreen && reduceMotion) showStill();
+    }
+
+    button.hidden = false;
+    button.addEventListener("click", function () {
+      userPaused = !video.paused;
+      if (userPaused) video.pause();
+      else play();
+    });
+    video.addEventListener("play", render);
+    video.addEventListener("pause", render);
+    render();
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        onScreen = entries[0].isIntersecting;
+        update();
+      }, { threshold: 0.4 }).observe(video);
+    } else {
+      onScreen = true;
+      update();
+    }
+  });
+
   /* ---------- Team photo fallback (shows initials if a photo is missing) ---------- */
   document.querySelectorAll("img[data-fallback]").forEach(function (img) {
     function missing() { img.classList.add("is-missing"); }
