@@ -1,6 +1,6 @@
 /* IRIS Biopsy: analytics
-   Loads Google Analytics, the LinkedIn Insight Tag and (once connected) HubSpot's
-   tracking code. All IDs live in js/config.js.
+   Loads Google Analytics, the LinkedIn Insight Tag, HubSpot's tracking code and RB2B.
+   All IDs live in js/config.js.
    Early access form submissions are recorded in Google Analytics as a "generate_lead"
    event, and as a LinkedIn conversion if a conversion ID is set. */
 (function () {
@@ -46,6 +46,13 @@
       : HUBSPOT.region === "na2" ? "js-na2.hs-scripts.com"
       : "js.hs-scripts.com";
     loadScript("https://" + hsHost + "/" + encodeURIComponent(HUBSPOT.portalId) + ".js", "hs-script-loader");
+  }
+
+  /* ---------- RB2B visitor identification (key in js/config.js) ---------- */
+  var RB2B_KEY = CONFIG.rb2bKey || "";
+  if (RB2B_KEY && !window.reb2b) {
+    window.reb2b = { loaded: true };
+    loadScript("https://ddwl4m2hdecbv.cloudfront.net/b/" + encodeURIComponent(RB2B_KEY) + "/" + encodeURIComponent(RB2B_KEY) + ".js.gz");
   }
 
   /* ---------- LinkedIn Insight Tag ---------- */

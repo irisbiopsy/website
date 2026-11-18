@@ -91,6 +91,10 @@ browser console shows HubSpot's exact error.
 added to the Message field, and HubSpot's tracking code records the original source on
 the contact.
 
+**RB2B.** The RB2B visitor identification script loads from `js/analytics.js` using
+`rb2bKey` in `js/config.js`. Set it to `""` to turn RB2B off. It runs on the live site only,
+not in the single-file preview.
+
 **Analytics.** Google Analytics (`G-VTQXTF7QM9`) and the LinkedIn Insight Tag carry over
 from the old site. Each successful submission is recorded in Google Analytics as a
 `generate_lead` event. To count it as a LinkedIn conversion too, create a conversion in

@@ -27,5 +27,8 @@ window.IRIS_CONFIG = {
   // Carried over from the previous site.
   googleAnalyticsId: "G-VTQXTF7QM9",
   linkedInPartnerId: "8024780",
-  linkedInConversionId: "" // optional: LinkedIn Campaign Manager conversion ID
+  linkedInConversionId: "", // optional: LinkedIn Campaign Manager conversion ID
+
+  // RB2B website visitor identification. Leave as "" to turn it off.
+  rb2bKey: "QO92DHZR4RN7"
 };
