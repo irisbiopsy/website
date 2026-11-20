@@ -121,6 +121,17 @@
     counters.forEach(function (el) { countObserver.observe(el); });
   }
 
+  /* ---------- Hero animation: visitors with "reduce motion" on see a still frame ---------- */
+  var heroVideo = document.querySelector(".hero-video");
+  if (heroVideo && reduceMotion) {
+    heroVideo.removeAttribute("autoplay");
+    heroVideo.removeAttribute("loop");
+    heroVideo.pause();
+    var showHeroStill = function () { heroVideo.currentTime = 7; };
+    if (heroVideo.readyState >= 1) showHeroStill();
+    else heroVideo.addEventListener("loadedmetadata", showHeroStill, { once: true });
+  }
+
   /* ---------- Device clips: play while on screen, with a pause button ----------
      Visitors with "reduce motion" on see a still frame (data-still) until they press play. */
   document.querySelectorAll(".clip").forEach(function (clip) {

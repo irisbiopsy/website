@@ -446,10 +446,12 @@ sup.fn a { text-decoration: none; color: inherit; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: var(--light);
+  background: #05080d;
   aspect-ratio: 1 / 1;
 }
-.hero-frame img {
+.hero-frame img,
+.hero-frame video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -483,8 +485,8 @@ sup.fn a { text-decoration: none; color: inherit; }
   color: var(--blue);
 }
 .hero-chip .ico svg { width: 18px; height: 18px; }
-.hero-chip--a { left: -22px; bottom: 28px; }
-.hero-chip--b { right: -14px; top: 26px; }
+.hero-chip--a { right: -14px; bottom: 28px; }
+.hero-chip--b { left: -22px; top: 26px; }
 .hero-caption {
   margin: 14px 4px 0;
   font-size: 12.5px;
@@ -1264,8 +1266,8 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .access-grid { grid-template-columns: minmax(0, 1fr); }
   .problem-grid .section-head { position: static; }
   .hero-media { max-width: 640px; }
-  .hero-chip--a { left: 12px; }
-  .hero-chip--b { right: 12px; }
+  .hero-chip--a { right: 12px; }
+  .hero-chip--b { left: 12px; }
   .steps { grid-template-columns: minmax(0, 1fr); max-width: 640px; }
   .clips { grid-template-columns: minmax(0, 1fr); max-width: 640px; gap: 40px; }
   .step { display: grid; grid-template-columns: minmax(0, 1fr); }

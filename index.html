@@ -152,20 +152,20 @@
 
         <div class="hero-media reveal" data-delay="2">
           <div class="hero-frame">
-            <picture>
-              <source srcset="assets/img/iris-hero-still.webp" type="image/webp" media="(prefers-reduced-motion: reduce)" />
-              <img src="assets/img/iris-hero.gif" width="1400" height="1400" alt="Animation of IRIS on a patient's abdomen: the guide is aligned to the red CT gantry laser over the skin entry site, then its angle scale is raised and a biopsy needle is advanced through the center hub." fetchpriority="high" />
-            </picture>
+            <!-- Hero animation: a muted, looping square video. The poster is the still frame shown before it plays and to visitors with "reduce motion" on. -->
+            <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/iris-hero-poster.webp" width="960" height="960" aria-label="Animation of a CT scan view: IRIS sits on the skin with its radiopaque markers visible, and a needle set at the planned 62.5 degree angle advances to the target.">
+              <source src="assets/video/iris-hero.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="hero-chip hero-chip--a">
-            <span class="ico"><svg aria-hidden="true"><use href="#i-crosshair" /></svg></span>
-            <span>Aligned to the CT laser<small>at the skin entry site</small></span>
-          </div>
-          <div class="hero-chip hero-chip--b">
             <span class="ico"><svg aria-hidden="true"><use href="#i-box" /></svg></span>
             <span>Single-use<small>No capital equipment</small></span>
           </div>
-          <p class="hero-caption">Illustrative rendering of IRIS in use.</p>
+          <div class="hero-chip hero-chip--b">
+            <span class="ico"><svg aria-hidden="true"><use href="#i-crosshair" /></svg></span>
+            <span>Planned angle, at the skin<small>Aligned to the CT laser</small></span>
+          </div>
+          <p class="hero-caption">Illustrative image, not actual patient data.</p>
         </div>
       </div>
     </section>

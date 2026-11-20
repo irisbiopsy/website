@@ -164,9 +164,10 @@ Old links keep working: `irisbiopsy.com/index.html#top` redirects to the home pa
   `src` URL from Vimeo's embed code (keep the `?h=` part; private and unlisted videos
   won't play without it) and replace the existing one. The extra settings after it
   (`badge=0`, `title=0` and so on) hide Vimeo's title bar and can stay.
-- **Hero animation:** replace `assets/img/iris-hero.gif` with a file of the same name.
-  `assets/img/iris-hero-still.webp` is the still frame shown to visitors who have
-  "reduce motion" turned on; swap it too if the animation changes.
+- **Hero animation:** a square, muted, looping video, `assets/video/iris-hero.mp4` (960×960).
+  `assets/img/iris-hero-poster.webp` is the still frame shown before it plays and to visitors
+  who have "reduce motion" turned on; swap it too if the animation changes. The two message
+  chips over it are text in the Hero section of `index.html`.
 - **Device clips ("The device" section):** `assets/video/iris-fold`, `iris-spin` and
   `iris-explode`, each as .mp4 plus a .webm backup, 4:3 with no sound, and a still frame
   for each in `assets/img/clip-*.webp`. They play only while on screen, each has a pause
